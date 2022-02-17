@@ -11,11 +11,6 @@ abstract class Validator
 {
     const CORRECT_CODE_LENGTHS = [8,12,13,14,17,18];
 
-    // public function setCode(GtinCode $code): void
-    // {
-    //     $this->code = $code;
-    // }
-
     public function isContainsOnlyDigits(): bool
     {
         return preg_match("/^[0-9]+$/", $this->code)
